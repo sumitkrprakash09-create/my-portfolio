@@ -13,7 +13,6 @@
             box-sizing: border-box;
         }
 
-```
     html {
         scroll-behavior: smooth;
     }
@@ -130,5 +129,165 @@
         background: #12151d;
         border: 1px solid #272c38;
         border-radius: 12px;
-```
+    }
+
+    .card h3 {
+        margin-bottom: 12px;
+        color: #a5b4fc;
+    }
+
+    .card p {
+        color: #a8adbb;
+        font-size: 14px;
+    }
+
+    .skills {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 12px;
+    }
+
+    .skill {
+        padding: 10px 16px;
+        background: #171b27;
+        border: 1px solid #30364a;
+        border-radius: 7px;
+        color: #dce0ff;
+    }
+
+    .contact-box {
+        padding: 30px;
+        border: 1px solid #30364a;
+        background: #12151d;
+        border-radius: 12px;
+    }
+
+    .contact-box p {
+        color: #a8adbb;
+        margin: 12px 0 22px;
+    }
+
+    footer {
+        padding: 25px;
+        text-align: center;
+        border-top: 1px solid #242833;
+        color: #858b99;
+        font-size: 13px;
+    }
+
+    @media (max-width: 600px) {
+        nav {
+            padding: 18px 5%;
+            flex-wrap: wrap;
+            gap: 12px;
+        }
+
+        nav a {
+            margin-left: 10px;
+        }
+
+        .hero {
+            padding: 65px 7%;
+            min-height: 70vh;
+        }
+
+        section {
+            padding: 55px 7%;
+        }
+
+        h1 {
+            letter-spacing: -1px;
+        }
+    }
+</style>
+
+</head> <body>
+
+<nav>
+    <div class="logo">Sumit.</div>
+    <div>
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+    </div>
+</nav>
+
+<header class="hero">
+    <div class="tag">CSE Student · Aspiring Developer</div>
+    <h1>Hi, I'm Sumit.<br>I build <span>digital experiences.</span></h1>
+    <p>
+        I'm a Computer Science student interested in web development,
+        Python, and AI. I'm learning by building practical projects
+        and helping turn ideas into useful digital solutions.
+    </p>
+    <div>
+        <a href="#projects" class="button">Explore My Work ↗</a>
+        <a href="#contact" class="button secondary">Contact Me</a>
+    </div>
+</header>
+
+<section id="about">
+    <h2 class="section-title">About Me</h2>
+    <p class="section-description">
+        I'm building my skills in technology through hands-on projects.
+        My goal is to create websites and software that are useful,
+        easy to use, and visually appealing.
+    </p>
+</section>
+
+<section id="skills">
+    <h2 class="section-title">My Skills</h2>
+    <p class="section-description">Technologies I'm learning and practising.</p>
+    <div class="skills">
+        <div class="skill">HTML</div>
+        <div class="skill">CSS</div>
+        <div class="skill">Python</div>
+        <div class="skill">JavaScript — Learning</div>
+        <div class="skill">Responsive Design</div>
+        <div class="skill">GitHub</div>
+    </div>
+</section>
+
+<section id="projects">
+    <h2 class="section-title">My Projects</h2>
+    <p class="section-description">
+        A selection of projects I am developing to improve my skills.
+    </p>
+    <div class="cards">
+        <div class="card">
+            <h3>Personal Portfolio</h3>
+            <p>A responsive website introducing me, my skills, and my work.</p>
+        </div>
+        <div class="card">
+            <h3>Gym Website</h3>
+            <p>A demonstration website concept for a fitness business.</p>
+        </div>
+        <div class="card">
+            <h3>Python Projects</h3>
+            <p>Small programming projects to practise logic and problem-solving.</p>
+        </div>
+    </div>
+</section>
+
+<section id="contact">
+    <h2 class="section-title">Let's Connect</h2>
+    <div class="contact-box">
+        <h3>Have a project in mind?</h3>
+        <p>
+            I'm interested in learning, collaborating, and exploring
+            opportunities to build useful digital projects.
+        </p>
+        <a class="button"
+           href="https://github.com/sumitkrprakash09-create">
+            Visit My GitHub ↗
+        </a>
+    </div>
+</section>
+
+<footer>
+    © 2026 Sumit Prakash. Built with HTML and CSS.
+</footer>
+
+</body> </html>
 
